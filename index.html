@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tito Clark | Official Website</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import (Inter is Tailwind default) */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #0f172a; /* Dark slate background for particle contrast */
+            color: #e2e8f0; /* Default light text color */
+        }
+        /* Style for the main CTA buttons */
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Glowing Image Effect for Logo Placeholder */
+        .logo-glow-img {
+            /* Max width to ensure it scales nicely on larger screens but doesn't get too big */
+            max-width: 300px; 
+            height: auto;
+            /* Center the image */
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto;
+            
+            /* Neon cyan glow */
+            filter: 
+                drop-shadow(0 0 10px #00FFFF) 
+                drop-shadow(0 0 20px #00FFFF) 
+                drop-shadow(0 0 30px #00FFFF);
+            animation: pulse-glow-img 2.5s infinite alternate;
+        }
+
+        @keyframes pulse-glow-img {
+            from {
+                filter: drop-shadow(0 0 8px #00FFFF) drop-shadow(0 0 12px #00FFFF) drop-shadow(0 0 16px #00FFFF);
+            }
+            to {
+                filter: drop-shadow(0 0 15px #00FFFF) drop-shadow(0 0 25px #00FFFF) drop-shadow(0 0 35px #00FFFF);
+            }
+        }
+        
+        /* Canvas background styling */
+        #particles-canvas {
+            background-color: #0f172a; /* Dark background */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section --><section id="hero" class="relative py-20 md:py-32 text-center shadow-xl overflow-hidden">
+        <!-- Canvas for Moving Particles Background (Z-index 0) --><canvas id="particles-canvas" class="absolute inset-0 z-0"></canvas>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
+            <!-- Updated H1 with Glow Effect and Placeholder Image --><!-- Replace 'https://placehold.co/300x150/00FFFF/FFFFFF/png?text=Your+Logo' with your actual logo URL --><img src="OFFICIAL LOGO.png" alt="Your Brand Logo" class="logo-glow-img mb-6">
+            <br>
+            <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto">
+                Manood ng Live sa ating Facebook Page at sumali sa ating Official Telegram Group!
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-8">
+
+                <!-- Facebook CTA --><a href="https://www.facebook.com/TitoClarkGaming" target="_blank" class="cta-button flex items-center justify-center px-10 py-4 bg-blue-600 text-white font-bold rounded-xl text-lg hover:bg-blue-700">
+                    <!-- Facebook Icon (Inline SVG) --><svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.262c-1.225 0-1.628.75-1.628 1.549V12h2.775l-.444 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/></svg>
+                    Follow me on Facebook
+                </a>
+
+                <!-- Telegram CTA --><a href="https://t.me/+9vUORowBThY0NDhl" target="_blank" class="cta-button flex items-center justify-center px-10 py-4 bg-cyan-500 text-white font-bold rounded-xl text-lg hover:bg-cyan-600">
+                    <!-- Telegram Icon (Inline SVG) --><svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.43 8.35c-.14.62-.48 2.05-.66 2.84-.18.79-.35 1.49-.6 2.58-.26 1.1-.47 1.8-.82 2.15-.36.35-.74.47-1.12.35-.4-.12-.89-.43-1.44-.79-1.04-.68-1.92-1.27-3.08-2.01-1.16-.74-2.18-1.57-2.85-2.04-.67-.47-1.02-.79-1.07-1.01-.05-.21.03-.43.23-.61.19-.18.49-.3.94-.49.46-.19 1.25-.43 2.14-.62.89-.19 1.77-.32 2.65-.39.88-.07 1.76-.08 2.64 0 .88.08 1.68.21 2.39.43.71.21 1.25.49 1.63.83.37.34.58.73.65 1.18.06.45-.04.91-.32 1.34z"/></svg>
+                    Join my Telegram Group
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section --><section id="features" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-white mb-4">Follow mo ko at sumali sa Telegram Group</h2>
+            <div class="w-20 h-1 bg-cyan-500 mx-auto mb-12 rounded-full"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                <!-- Facebook Benefit Card --><div class="bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-blue-500 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 18.3a.5.5 0 01-.7 0l-3.3-3.3a8.5 8.5 0 11.7-.7l3.3 3.3a.5.5 0 010 .7zM10.5 3a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"/></svg>
+                        <h3 class="text-2xl font-semibold text-white">Facebook Page: Tito Clark</h3>
+                    </div>
+                    <ul class="text-gray-400 space-y-3 list-disc list-inside ml-4">
+                        <li>Follow mo ako para updated ka lagi sa ating mga palaro.</li>
+                        <li>Araw-araw umuulan ng papremyo galing kay Tito Clark.</li>
+                        <li>Maging aktibo sa mga posting at sumunod sa alituntunin.</li>
+                        <li>Anu pa hinihintay mo Follow mo ko baka kw na ang susunod na mananalo.</li>
+                    </ul>
+                </div>
+
+                <!-- Telegram Benefit Card --><div class="bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-cyan-400 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm1.68 15.17l-.85-4.22c-.08-.4-.36-.67-.78-.73l-4.1-.64c-.45-.07-.58-.33-.2-.59l11.41-6.95c.38-.24.71.04.58.46l-2.09 10.45c-.09.38-.28.53-.52.54l-4.22.62z"/></svg>
+                        <h3 class="text-2xl font-semibold text-white">Telegram: Official Tito Clark Group</h3>
+                    </div>
+                    <ul class="text-gray-400 space-y-3 list-disc list-inside ml-4">
+                        <li>Lumahok sa ating mga palaro para manalo ng papremyo!</li>
+                        <li>Makigulo at makisaya kasama ang mga kaibigan sa loob ng telegram</li>
+                        <li>Mas marami mas masaya!</li>
+                        <li>Araw-araw pamigay sa mga aktibong manlalaro</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action --><section class="py-16 bg-indigo-600 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Don't Miss Out!</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Select your preferred community platform below and start connecting today.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <!-- Facebook Secondary CTA --><a href="https://www.facebook.com/TitoClarkGaming" target="_blank" class="cta-button inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 font-bold rounded-full hover:bg-gray-100">
+                    Go to Facebook
+                </a>
+                <!-- Telegram Secondary CTA --><a href="https://t.me/+9vUORowBThY0NDhl" target="_blank" class="cta-button inline-flex items-center justify-center px-8 py-3 bg-white text-cyan-500 font-bold rounded-full hover:bg-gray-100">
+                    Go to Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer --><footer class="bg-gray-950 text-white py-6">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-400">
+            <p>&copy; 2025 Tito Clark Gaming. All rights reserved. | <a href="#" class="hover:underline">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for the Moving Particles Background (Starfield Effect)
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const numParticles = 100;
+
+        // Particle class definition
+        class Particle {
+            constructor(x, y, radius, color, velocity) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+                this.velocity = velocity;
+                this.alpha = Math.random() * 0.7 + 0.3; // Random opacity
+            }
+
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.alpha;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.restore();
+            }
+
+            update() {
+                this.x += this.velocity.x;
+                this.y += this.velocity.y;
+
+                // Wrap particles around the screen
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                    this.reset();
+                }
+                
+                // Slowly fade the particle
+                this.alpha -= 0.001;
+                if (this.alpha < 0.1) {
+                    this.reset();
+                }
+            }
+            
+            reset() {
+                this.x = Math.random() < 0.5 ? 0 : canvas.width; // Reset on edge
+                this.y = Math.random() * canvas.height;
+                this.alpha = Math.random() * 0.7 + 0.3;
+            }
+        }
+
+        // Initialize particles
+        function initParticles() {
+            particles = [];
+            for (let i = 0; i < numParticles; i++) {
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                const radius = Math.random() * 1.5 + 0.5; // Small dots
+                const color = '#ffffff';
+                const speed = Math.random() * 0.5 + 0.1;
+                const velocity = { x: speed * (Math.random() < 0.5 ? -1 : 1), y: speed * (Math.random() < 0.5 ? -1 : 1) };
+                
+                particles.push(new Particle(x, y, radius, color, velocity));
+            }
+        }
+
+        // Animation loop
+        let animationFrameId;
+        function animate() {
+            animationFrameId = requestAnimationFrame(animate);
+            // Clear canvas with a slight opacity to create a trail effect
+            ctx.fillStyle = 'rgba(15, 23, 42, 0.1)'; // #0f172a with transparency
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+        }
+        // Handle resize event
+        function handleResize() {
+            const heroSection = document.getElementById('hero');
+            canvas.width = heroSection.offsetWidth;
+            canvas.height = heroSection.offsetHeight;
+            
+            // Re-initialize particles on resize to fill the new area
+            initParticles();
+        }
+
+        // Start when the window is loaded
+        window.onload = function() {
+            handleResize(); // Initial setup
+            animate(); // Start the animation loop
+            
+            // Set up resize listener
+            window.addEventListener('resize', handleResize);
+        }
+        
+    </script>
+</body>
+</html>
